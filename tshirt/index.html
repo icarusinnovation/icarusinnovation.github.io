@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+    
+<head>
+        <title>Tshirt Designer</title>
+        <script src="https://threejs.org/build/three.js"></script>
+		<script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+		<script src="ObjectControls.js"></script>
+		
+		<style>
+			.container {
+			
+			position: absolute; left:0px; top:0px
+			
+			}
+
+			#screenshot{
+			  position: fixed;
+			  bottom: 10px;
+			  left: 10px;
+			}
+
+			.screenshot {
+			  background-color : #31B0D5;
+			  color: white;
+			  padding: 10px 20px;
+			  border-radius: 10px;
+			  border-color: #46b8da;
+			}
+			
+			#mug{
+			  position: fixed;
+			  top: 10px;
+			  right: 10px;
+			}
+
+			.mug {
+			  background-color : #31B0D5;
+			  color: white;
+			  padding: 10px 20px;
+			  border-radius: 10px;
+			  border-color: #46b8da;
+			}
+			
+			#upload{
+			  position: fixed;
+			  bottom: 10px;
+			  right: 10px;
+			}
+
+			.upload {
+			  background-color : #31B0D5;
+			  color: white;
+			  padding: 10px 20px;
+			  border-radius: 10px;
+			  border-color: #46b8da;
+			}
+		</style>
+    </head>
+<body>
+
+<canvas id='viewport'></canvas>
+<div class="container">
+
+			
+			
+			
+			<div id="screenshot" style="z-index:1005">
+			<button class="screenshot">Take ScreenShot</button>
+			</div>
+			
+			<div id="upload" style="z-index:1005">
+			<input id="userImage" class="upload" type="file" />
+			</div>
+			
+			<div id="mug" style="z-index:1005">
+			<button class="mug">Show Mug</button>
+			</div>
+
+ 
+        <img src="texture.png" id="pattern" style="display: none;">
+		<img src="icarus.png" id="icaruslogo" style="display: none;">
+		
+
+</div>
+</body>
+<script src="mainobf.js"></script>
+</html>

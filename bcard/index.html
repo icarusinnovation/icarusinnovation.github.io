@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+        <title>Business Card</title>
+        <meta name="description" content="<b>Icarus Innovations &trade;</b>  is a tech based solutions provider with applications in the field of Real Estate, Agriculture, Inspection, Mining, Surveillance, Railways, Roadways and much more.">
+        <meta name="keywords" content="Drones, Augmented Reality, Machine Learning">
+        <meta charset="utf-8">
+        <meta content="Kapil Jain [ Kapil ] [ Jain ] Kapil M Jain">
+        <meta content="Kapil Jain" name="author">
+        <meta content="Aumkar Rane [ Aumkar ] [ Rane ]">
+        <meta content="Aumkar Rane" name="author">
+
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="../images/favicon.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-responsive.css">
+        <link rel="stylesheet" href="../css/animate.min.css">
+        <link rel="stylesheet" href="../css/vertical-rhythm.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/magnific-popup.css">        
+		
+		<style>
+		body{
+		  overflow: hidden !important;
+		  display: grid;
+		  font-family: "Open Sans", sans-serif;
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-osx-font-smoothing: grayscale;
+		  -moz-font-smoothing: antialiased;
+		  -webkit-font-smoothing: antialiased;
+		  font-smoothing: antialiased;
+		}
+		
+		@media only screen and (min-width: 1024px) {
+			.tariffCards{
+				margin: 40px 0 0 -140px;
+			}
+		}
+		span{
+			pointer-events: none;
+		 }
+		
+		.tariffCards {
+			position: relative;  
+			-webkit-font-smoothing: antialiased;
+			top: 50%;
+			left: 50%;
+			margin: 0 0 0 -140px;
+			user-select: none;
+			transform: translate3d(0, 0, 0);
+			transform-style: preserve-3d;
+
+		}
+
+		.tariffCards > div {
+		  position: relative;
+		  width: 280px;
+		  height: 140px;
+		  border-radius: 12px;
+		  color: #fff;
+		  transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
+		  transition: all 0.4s ease;
+		  overflow: hidden;
+		  cursor: pointer;
+		}
+
+		.tariffCards > div:after {
+		  position: absolute;
+		  top: -70px;
+		  left: 0;
+		  content: '';
+		  width: 200%;
+		  height: 200%;
+		  background-image: linear-gradient(60deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.1), rgba(255,255,255,0) 80%);
+		  transform: translateX(-100%);
+		}
+		.tariffCards > div img {
+		  margin-top: 15px;
+		  pointer-events: none;
+		  height: 74px !important;
+		}
+		.tariffCards > div h3 {
+		  position: absolute;
+		  bottom: 28px;
+		  left: 15px;
+		  font-size: 18px;
+		  margin-bottom: 10px !important;
+		}
+		.tariffCards > div span {
+		  position: absolute;
+		  font-weight: 700;
+		  bottom: 15px;
+		  left: 15px;
+		  font-size: 12px;
+		  font-weight: 400;
+		  opacity: 0.8;
+		}
+		.tariffCards > div.economy {
+		  margin-top: 0;
+		  z-index: 3;
+		  background-color: #8063e1;
+		  background-image: linear-gradient(135deg, #bd7be8, #8063e1);
+		  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #8063e1;
+		}
+		.tariffCards > div.premiumeconomy {
+		  margin-top: -70px;
+		  z-index: 2;
+		  background-color: #3f58e3;
+		  background-image: linear-gradient(135deg, #7f94fc, #3f58e3);
+		  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #3f58e3;
+		}
+		.tariffCards > div.business {
+		  margin-top: -40px;
+		  z-index: 1;
+		  background-color: #2c6fd1;
+		  background-image: linear-gradient(135deg, #21bbfe, #2c6fd1);
+		  box-shadow: 20px 20px 60px rgba(34,50,84,0.5), 1px 1px 0px 1px #2c6fd1;
+		}
+		.tariffCards > div.first {
+		  margin-top: -70px;
+		  background-color: #352f64;
+		  background-image: linear-gradient(135deg, #415197, #352f64);
+		  box-shadow: 5px 5px 60px rgba(34,50,84,0.1), 1px 1px 0px 1px #352f64;
+		}
+		.tariffCards > div:hover {
+		  transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px, 50px);
+		}
+		.tariffCards > div:hover:after {
+		  transform: translateX(100%);
+		  transition: all 1.2s ease-in-out;
+		}
+	</style>
+        
+    </head>
+    <body class="appear-animate">
+        
+        <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+
+        <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+                    
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                       Select an option
+                    </h2>
+                    
+                    <!-- Row -->
+                    <div class="row">
+                       
+                        
+                        <!-- Col -->
+                        
+                        <div class="col-sm-12 mb-40">
+                            
+                              <div class="tariffCards">
+								<div class="premiumeconomy" style="visibility: hidden">
+								  <img src="" alt="Economy">
+								</div>
+								<div class="economy" id="ar">
+								  <img src="op1.png" alt="AR">
+								  <h3>Augmented Reality</h3>
+								  <span>See the magic on your card</span>
+								</div>
+								<div class="business" id="web">
+								  <img src="op2.png" alt="Website">
+								  <h3>Website</h3>
+								  <span>Check out our webpage</span>
+								</div>
+								<div class="first" style="visibility: hidden">
+								  <img src=" " alt="First">
+								</div>
+							  </div>
+							  
+                        </div>                        
+                        <!-- End Col -->
+                        
+                     </div>
+                    <!-- End Row -->
+                    
+                </div>
+            </section>
+            <!-- End Section -->
+             
+        </div>
+        <!-- End Page Wrap -->
+ 
+        <!-- JS -->
+        <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="../js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="../js/jquery.appear.js"></script>
+        <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="../js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="../js/wow.min.js"></script>
+        <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.simple-text-rotator.min.js"></script>
+        <script type="text/javascript" src="../js/contact-form.js"></script>
+        <script type="text/javascript" src="../js/jquery.ajaxchimp.min.js"></script>        
+        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+		
+				
+		<script>
+		var op1 = document.getElementById("ar");
+		
+		op1.addEventListener("click", function(){
+			setTimeout(function(){
+				location.href="ar/"
+			}, 300);
+		});
+			
+		var op2 = document.getElementById("web");
+		
+		
+		op2.addEventListener("click", function(){
+			setTimeout(function(){
+				location.href="../"
+			}, 300);
+		});
+			
+		
+		$(".page-loader div").fadeOut();
+        $(".page-loader").delay(400).fadeOut("slow");
+
+
+		</script>
+        
+        
+    </body>
+
+</html>

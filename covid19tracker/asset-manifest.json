@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/covid19tracker/static/css/main.22b80029.chunk.css",
+    "main.js": "/covid19tracker/static/js/main.aa8985de.chunk.js",
+    "main.js.map": "/covid19tracker/static/js/main.aa8985de.chunk.js.map",
+    "runtime-main.js": "/covid19tracker/static/js/runtime-main.645dbd88.js",
+    "runtime-main.js.map": "/covid19tracker/static/js/runtime-main.645dbd88.js.map",
+    "static/js/2.c859b742.chunk.js": "/covid19tracker/static/js/2.c859b742.chunk.js",
+    "static/js/2.c859b742.chunk.js.map": "/covid19tracker/static/js/2.c859b742.chunk.js.map",
+    "index.html": "/covid19tracker/index.html",
+    "precache-manifest.cd8aa078bce795bdff86645cd78ffdad.js": "/covid19tracker/precache-manifest.cd8aa078bce795bdff86645cd78ffdad.js",
+    "service-worker.js": "/covid19tracker/service-worker.js",
+    "static/css/main.22b80029.chunk.css.map": "/covid19tracker/static/css/main.22b80029.chunk.css.map",
+    "static/js/2.c859b742.chunk.js.LICENSE.txt": "/covid19tracker/static/js/2.c859b742.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/covid19tracker/static/media/archia-thin-webfont.e88f1cf3.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.645dbd88.js",
+    "static/js/2.c859b742.chunk.js",
+    "static/css/main.22b80029.chunk.css",
+    "static/js/main.aa8985de.chunk.js"
+  ]
+}

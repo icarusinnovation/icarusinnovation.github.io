@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+
+<script type="text/javascript">
+	
+		var type;
+		var imgL,imgR,imgF,imgB,imgT,imgD;
+		var key;
+		
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		if(urlParams.has('type')){  
+			//handle model type parameter if required
+			type = urlParams.get('type')
+		}
+
+		//1st Parameter
+		if(urlParams.has('imgL')){  
+			imgL = urlParams.get('imgL');
+		}
+
+
+		//2nd Parameter
+		if(urlParams.has('imgR')){  
+			//handle imgR parameter if required
+		}
+
+
+		//3rd Parameter
+		if(urlParams.has('imgF')){  
+			//handle imgF parameter if required
+		}
+
+		//4th Parameter
+		if(urlParams.has('imgB')){  
+			//handle imgB parameter if required
+		}
+
+		//5th Parameter
+		if(urlParams.has('imgT')){  
+			//handle imgT parameter if required
+		}
+
+		//6th Parameter
+		if(urlParams.has('imgD')){  
+			//handle imgD parameter if required
+		}
+
+		//client Licence key
+		if(urlParams.has('key')){
+			//handle licence key
+		}
+
+
+		if(type == 'fabric')
+		{
+
+			window.location.href = 'https://www.icarusinnovations.co/3D/1/index.html?type=fabric&&imgL='+imgL+'&&imgR=&&imgF=&&imgB=&&imgT=&&imgD=&&key=';
+
+		}
+
+
+		if(type == 'mug')
+		{
+
+			window.location.href = 'https://www.icarusinnovations.co/3D/2/index.html?type=mug&&imgL='+imgL+'&&imgR=&&imgF=&&imgB=&&imgT=&&imgD=&&key=';
+
+		}
+
+		if(type == 'tshirt')
+		{
+
+			window.location.href = 'https://www.icarusinnovations.co/3D/3/index.html?type=tshirt&&imgL='+imgL+'&&imgR=&&imgF=&&imgB=&&imgT=&&imgD=&&key=';
+
+		}
+
+</script>
+
+</head>
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script> 
+		 <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+		
+		<!-- import events.js script -->
+		<script src="events.js"></script>
+		
+		<title>Icarus Card</title>
+    </head>
+	    
+    <body style='background-color: #100e17; margin : 0px; overflow: hidden; font-family: Monospace;'>
+	
+	<div id ="logo"><img style="z-index:1000; pointer-events:auto; height: 100px; width: 200px;" src="Icarus_logo_black.png"></img></div>
+	
+	<div class="frame" id="loader">
+		<div class="center">
+			<div class="dot-1"></div>
+			<div class="dot-2"></div>
+			<div class="dot-3"></div>
+		</div>
+	</div>
+	
+		  <!-- play video-->
+	<div id="videoPrompt" class="hidden">
+        <div class="video-image-container">
+          <img id="demo" src="marker/logo.png">
+        </div>
+		
+        <div class="video-text-container">
+          <span class="video-text">Scan image from camera</span>
+        </div>
+    </div>
+		
+	<div id ="playVideo" class="hidden"><strong>Play Video</strong></div>
+	
+	<video id="video" playsinline loop preload="auto" controls="true" src='company.mp4' type='video/mp4' style="display:none"></video>
+	  
+    <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+    <a-scene renderer="antialias: true;
+                   colorManagement: true;
+                   sortObjects: true;
+                   maxCanvasWidth: 1920;
+                   maxCanvasHeight: 1920;
+				   logarithmicDepthBuffer: true"
+				   loading-screen="enabled: false" 
+				   embedded 
+				   gltf-model="dracoDecoderPath: gltf/;" 
+				   arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; patternRatio:0.7;;'
+				   vr-mode-ui="enabled: false">
+		
+		
+		<a-assets>
+
+						  
+		</a-assets>
+
+			<a-marker markerhandler1 type='pattern' patternUrl='marker/logo.patt' url='marker/logo.patt' minConfidence = '0.3' smooth='true' smoothCount = '10'>
+				<a-entity id="video" rotation="-90 0 0"></a-entity>
+			</a-marker>
+
+        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+			<a-entity camera> 
+			</a-entity>
+			
+		
+        </a-scene>
+		
+
+    </body>
+
+</html>
